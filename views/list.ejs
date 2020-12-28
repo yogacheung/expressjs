@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <H2>Bookings (<%= nData %>)</H2>
+        <ul>
+            <% for (var b of bookings) { %>
+            <li>res ID: <a href="/details?_id=<%= b._id %>"><%= b.restaurant_id %></a></li>
+            <% } %>
+            <a href='/insert'>insert</a>
+            <a href='/logout'>logout</a>
+        </ul>
+    </body>
+</html>
